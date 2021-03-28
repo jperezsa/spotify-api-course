@@ -1,0 +1,70 @@
+GET http://localhost:3977/api/test
+content-type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU3ZDVkYTNiNjgyMzcxMzRjNjIzOWYiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQHByb2J5dGUuY2wiLCJyb2xlIjoiUk9MRV9BRE1JTiIsImltYWdlIjoibnVsbCIsImlhdCI6MTYxNjM3NTQ5MCwiZXhwIjoxNjE4OTcxMDkwfQ.LKjU5gC7-OLXmgCE-If-yXPefNwkF7ufhsaUcwPrukU
+
+###
+
+GET http://localhost:3977/api/test
+content-type: application/json
+
+###
+
+
+POST http://localhost:3977/api/register
+Content-Type: application/json
+
+{
+    "name" : "Admin" ,
+    "lastname": "Admin",
+    "email": "admin@probyte.cl",
+    "password": "admin"
+}
+
+###
+
+
+POST http://localhost:3977/api/login
+Content-Type: application/json
+
+{
+
+    "email": "admin@probyte.cl",
+    "password": "admin",
+    "gethash": "true"
+}
+
+###
+
+
+PUT http://localhost:3977/api/update-user/6057f0b18f47a29018f279dc
+content-type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU3ZDVkYTNiNjgyMzcxMzRjNjIzOWYiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQHByb2J5dGUuY2wiLCJyb2xlIjoiUk9MRV9BRE1JTiIsImltYWdlIjoibnVsbCIsImlhdCI6MTYxNjM3NTQ5MCwiZXhwIjoxNjE4OTcxMDkwfQ.LKjU5gC7-OLXmgCE-If-yXPefNwkF7ufhsaUcwPrukU
+
+{
+    "name" : "Lucas" ,
+    "lastname": "Perez"
+    
+}
+
+
+###
+
+POST http://localhost:3977/api/upload-image-user/6057f0b18f47a29018f279dc
+content-type: application/json
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI2MDU3ZDVkYTNiNjgyMzcxMzRjNjIzOWYiLCJuYW1lIjoiQWRtaW4iLCJlbWFpbCI6ImFkbWluQHByb2J5dGUuY2wiLCJyb2xlIjoiUk9MRV9BRE1JTiIsImltYWdlIjoibnVsbCIsImlhdCI6MTYxNjM3NTQ5MCwiZXhwIjoxNjE4OTcxMDkwfQ.LKjU5gC7-OLXmgCE-If-yXPefNwkF7ufhsaUcwPrukU
+
+{
+    "image" : "Lucas" 
+   
+}
+
+
+###
+
+GET http://localhost:3977/api/get-image-user/laimagen.png
+content-type: application/json
+
+{
+    
+   
+}
